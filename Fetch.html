@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #d74113, #df749d, #377c95, #23d529);
+  animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section {
+  display: flex;
+  padding: 50px 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding-bottom: 200px; */
+}
+div {
+  background-image: linear-gradient(rgb(7, 5, 124), aqua,rgb(225, 213, 37));
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  flex-grow: 2;
+  border-radius: 10px;
+}
+
+div:hover {
+  transform: scale(1.1);
+}
+
+div:hover a {
+  display: block;
+}
+
+div h1 {
+  font-size: 24px;
+  color: #23d52f;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+div a {
+  transition-property: all;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  font-size: 18px;
+  display: none;
+  border-bottom: 3px solid transparent;
+}
+
+div a:hover {
+  font-size: 19px;
+  border-bottom: 3px solid purple;
+}
+img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  /* padding: 10px 100px; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  border-top: 5px solid rgba(44, 0, 44, 0.089);
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0px;
+ 
+
+  /* width: 100%; */
+}
+footer ul {
+  display: flex;
+  gap: 200px;
+  list-style-type: none;
+  display: none;
+}
+
+footer h3 {
+  font-size: 24px;
+}
+
+footer ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(68, 17, 180);
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: rgb(119, 255, 0);
+}
+footer:hover ul{
+  display: block;
+  display: flex;
+}
+footer:hover{
+  /* display: flex; */
+  width: 100%;
+}
+h2{
+  color: red;
+}
+@media screen and (min-width:120px) and (max-width:480px) {
+  section{
+    padding: 40px 30px;
+    gap: 0px;
+    background: linear-gradient(-45deg, #a5169a, #35add8, #ce496f);
+
+  }
+  div{
+    transform: scale(0.8);
+  }
+  div:hover{
+    transform: scale(1.002);
+  }
+
+  
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+  section{
+    padding: 50px 30px;
+    gap: 0px;
+    background: linear-gradient(-45deg, #a5169a, #35add8, #07f30f);
+  }
+  div{
+    transform: scale(0.9);
+  }
+  div:hover{
+    transform: scale(1.002);
+  }
+  footer{
+    display: flex;
+    width: 100%;
+  }
+  
+}
+
+    </style>
+</head>
+<body>
+    <section></section>
+    <footer>
+      <h2>Sonu Yadav</h2>
+      <ul>
+        <li><a href="https://wa.me/+918181919787">Whatsapp</a></li>
+        <li><a href="https://github.com/sonu8181">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/sonu-yadav-890303197/">Linkedin</a></li>
+        <li><a href="https://www.hackerrank.com/sonu01256yadav">HackerRank</a></li>
+      </ul>
+    </footer>
+    
+    <script src="Fetch.js"></script>
+</body>
+</html>
